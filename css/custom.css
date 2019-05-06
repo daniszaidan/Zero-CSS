@@ -1,0 +1,49 @@
+body{
+	/*background-color: rgb(234, 234, 234);*/
+	background: linear-gradient(#e1e8ec,#fff);
+}
+#demo .clearfix div[class*="col"]{
+    height: 50px;
+    border: 1px solid white;
+    /*overflow: hidden;*/
+}
+#demo .clearfix div[class*="col"] .p{
+    color:white;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.col-12, .col-10, .col-8, .col-6, 
+.col-3, .col-4 , .col-1, .col-5,
+.col-7, .col-9, .col-11, .col-2{
+    background: #03A9F4
+}
+.custom-height div[class*="col"]{
+	height: auto !important;
+}
+.custom-height > div[class*="col"]{
+	background: none;
+	border: none !important;
+}
+.div-color p{
+	text-align: center;
+	margin-bottom: 5px;
+}
+.card[class*="bg-"]{
+	border: none !important;
+	cursor: pointer;
+}
+.card p:nth-child(1){
+	text-transform: capitalize;
+}
+.bg-yellow p{
+	color: #595959;
+}
+hr{
+	border: 2px solid #bfbfbf;
+}
+.card pre code{
+	height: 200px;
+}
+.custom-margin-top{
+	margin-top: 50px;
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zero.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/zero.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <link rel="stylesheet" type="text/css" href="css/hybrid.css">
+    <script src="js/highlight.pack.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+            /*border: 1px solid black !important;*/
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <div id="overlay"></div>
+
+    <div class="modal-frame">
+        <div class="modal-box" id="modal-top">
+            <div class="modal-header">
+                <h4>Lorem</h4>
+                <div class="modal-close" onclick="modalClose()"><i class="material-icons">close</i></div>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" onclick="modalClose()">close</button>
+            </div>
+        </div>
+
+        <div class="modal-box-notification" id="modal-right">
+            <div class="modal-header">
+                <h6>Lorem</h6>
+                <div class="modal-close" onclick="modalCloseRight()"><i class="material-icons">arrow_forward</i></div>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+
+        <!-- <div class="modal-box-bottom" id="modal-bottom">
+                <div class="modal-header">
+                    <h4>Lorem</h4>
+                    <div class="modal-close" onclick="modalCloseBottom()"><i class="material-icons">close</i></div>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+            </div> -->
+
+    </div>
+
+    <div class="wrapper" id="demo">
+
+        <br>
+        <blockquote class="blockquote bq-primary">
+            <p class="bq-title">Zero.CSS Framework</p>
+            <p>Creaetd By DanZai / Danis Zaidan on 31 Juli 2018. <br>Copyright &copy 2018 - All Rights Reserved</p>
+        </blockquote>
+        <br>
+
+        <h2>Grid System</h2><br>
+        <div class="clearfix">
+            <div class="col-12">
+                <p class="p">Col 12</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-11">
+                <p class="p">Col 11</p>
+            </div>
+            <div class="col-1">
+                <p class="p">Col 1</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-10">
+                <p class="p">Col 10</p>
+            </div>
+            <div class="col-2">
+                <p class="p">Col 2</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-9">
+                <p class="p">Col 9</p>
+            </div>
+            <div class="col-3">
+                <p class="p">Col 3</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-8">
+                <p class="p">Col 8</p>
+            </div>
+            <div class="col-4">
+                <p class="p">Col 4</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-7">
+                <p class="p">Col 7</p>
+            </div>
+            <div class="col-5">
+                <p class="p">Col 5</p>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-6">
+                <p class="p">Col 6</p>
+            </div>
+            <div class="col-6">
+                <p class="p">Col 6</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="clearfix">
+            <div class="col-3">
+                <p class="p">Col 3</p>
+            </div>
+            <div class="col-3">
+                <p class="p">Col 3</p>
+            </div>
+            <div class="col-3">
+                <p class="p">Col 3</p>
+            </div>
+            <div class="col-3">
+                <p class="p">Col 3</p>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Push Element</h2> <br><br>
+        <div class="clearfix">
+            <div class="col-push-6 col-6 clear-m-push">
+                <p class="p">col-6, col-push-6, clear-m-push</p>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Responsive Grid Example</h2> <br><br>
+        <div class="clearfix">
+            <div class="col-8 col-l-11 col-m-6 col-s-3">
+                <p class="p">col-8, col-m-11, col-s-5, col-xs-3</p>
+            </div>
+            <div class="col-4 col-l-1 col-m-6 col-s-9">
+                <p class="p">col-4, col-m-1, col-s-7, col-xs-9</p>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Card Example</h2> <br><br>
+        <div class="clearfix custom-height">
+            <div class="col-4 col-m-6 col-s-12">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="col-4 col-m-6 col-s-12">
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="col-4 col-m-12 col-s-12">
+                <div class="card card3">
+                    <h3>Card 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Button with Ripple Effect</h2> <br><br>
+        <div class="clearfix custom-height">
+            <div class="col-12">
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-default btn-rounded">Default</button>
+                <button type="button" class="btn btn-primary btn-rounded">Primary</button>
+                <button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
+                <button type="button" class="btn btn-success btn-rounded">Success</button>
+                <button type="button" class="btn btn-info btn-rounded">Info</button>
+                <button type="button" class="btn btn-warning btn-rounded">Warning</button>
+                <button type="button" class="btn btn-danger btn-rounded">Danger</button>
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn blue-gradient btn-rounded">Blue Gradient</button>
+                <button type="button" class="btn peach-gradient btn-rounded">Peach Gradient</button>
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-s">Small</button>
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-l">Large</button>
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-icon-s"><i class="material-icons">done</i></button>
+                <button type="button" class="btn btn-icon"><i class="material-icons">bookmark</i></button>
+                <button type="button" class="btn btn-icon-l"><i class="material-icons">home</i></button>
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Modal Box</h2> <br><br>
+        <div class="clearfix custom-height">
+            <div class="col-12">
+                <button type="button" class="btn btn-default" onclick="modalOpen()">Modal Default</button>
+                <button type="button" class="btn btn-default" onclick="modalOpenTop()">Modal Top</button>
+                <button type="button" class="btn btn-default" onclick="modalOpenLeft()">Modal Left</button>
+                <button type="button" class="btn btn-default" onclick="modalOpenRight()">Modal Right</button>
+                <button type="button" class="btn btn-default" onclick="modalOpenBottom()">Modal Bottom</button>
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Table Responsive</h2> <br><br>
+        <div class="clearfix custom-height">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th class="table-number">No</th>
+                            <th>Name</th>
+                            <th>Nickname</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-number">1</td>
+                            <td>Danis Zaidan</td>
+                            <td>DanZai</td>
+                            <td>Designer & Programmer</td>
+                        </tr>
+                        <tr>
+                            <td class="table-number">2</td>
+                            <td>Danis Zaidan</td>
+                            <td>DanZai</td>
+                            <td>Designer & Programmer</td>
+                        </tr>
+                        <tr>
+                            <td class="table-number">3</td>
+                            <td>Danis Zaidan</td>
+                            <td>DanZai</td>
+                            <td>Designer & Programmer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="card custom-margin-top">
+                <h3>Table in card</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th class="table-number">No</th>
+                                <th>Name</th>
+                                <th>Nickname</th>
+                                <th>Position</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-number">1</td>
+                                <td>Danis Zaidan</td>
+                                <td>DanZai</td>
+                                <td>Designer & Programmer</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">2</td>
+                                <td>Danis Zaidan</td>
+                                <td>DanZai</td>
+                                <td>Designer & Programmer</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">3</td>
+                                <td>Danis Zaidan</td>
+                                <td>DanZai</td>
+                                <td>Designer & Programmer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <hr>
+
+        <br>
+        <h2>Background Color (Click to Copy)</h2> <br><br>
+        <div class="clearfix custom-height">
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-red" onclick="copyText('#F44336')">
+                    <p>red</p>
+                    <p id="F44336">#F44336</p>
+                    <p>bg-red</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-pink" onclick="copyText('#E91E63')">
+                    <p>pink</p>
+                    <p id="E91E63">#E91E63</p>
+                    <p>bg-pink</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-purple" onclick="copyText('#9C27B0')">
+                    <p>purple</p>
+                    <p id="9C27B0">#9C27B0</p>
+                    <p>bg-purple</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-deep-purple" onclick="copyText('#673AB7')">
+                    <p>deep purple</p>
+                    <p id="673AB7">#673AB7</p>
+                    <p>bg-deep-purple</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-indigo" onclick="copyText('#3F51B5')">
+                    <p>indigo</p>
+                    <p id="3F51B5">#3F51B5</p>
+                    <p>bg-indigo</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-blue" onclick="copyText('#2196F3')">
+                    <p>blue</p>
+                    <p id="2196F3">#2196F3</p>
+                    <p>bg-blue</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-light-blue" onclick="copyText('#03A9F4')">
+                    <p>light blue</p>
+                    <p id="03A9F4">#03A9F4</p>
+                    <p>bg-light-blue</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-cyan" onclick="copyText('#00BCD4')">
+                    <p>cyan</p>
+                    <p id="00BCD4">#00BCD4</p>
+                    <p>bg-cyan</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-teal" onclick="copyText('#009688')">
+                    <p>teal</p>
+                    <p id="009688">#009688</p>
+                    <p>bg-teal</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-green" onclick="copyText('#4CAF50')">
+                    <p>green</p>
+                    <p id="4CAF50">#4CAF50</p>
+                    <p>bg-green</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-light-green" onclick="copyText('#8BC34A')">
+                    <p>light green</p>
+                    <p id="8BC34A">#8BC34A</p>
+                    <p>bg-light-green</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-lime" onclick="copyText('#CDDC39')">
+                    <p>lime</p>
+                    <p id="CDDC39">#CDDC39</p>
+                    <p>bg-lime</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-yellow" onclick="copyText('#FFEB3B')">
+                    <p>yellow</p>
+                    <p id="FFEB3B">#FFEB3B</p>
+                    <p>bg-yellow</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-amber" onclick="copyText('#FFC107')">
+                    <p>amber</p>
+                    <p id="FFC107">#FFC107</p>
+                    <p>bg-amber</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-orange" onclick="copyText('#FF9800')">
+                    <p>orange</p>
+                    <p id="FF9800">#FF9800</p>
+                    <p>bg-orange</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-deep-orange" onclick="copyText('#FF5722')">
+                    <p>deep orange</p>
+                    <p id="FF5722">#FF5722</p>
+                    <p>bg-deep-orange</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-brown" onclick="copyText('#795548')">
+                    <p>brown</p>
+                    <p id="795548">#795548</p>
+                    <p>bg-brown</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-grey" onclick="copyText('#9E9E9E')">
+                    <p>grey</p>
+                    <p id="9E9E9E">#9E9E9E</p>
+                    <p>bg-grey</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-blue-grey" onclick="copyText('#607D8B')">
+                    <p>blue grey</p>
+                    <p id="607D8B">#607D8B</p>
+                    <p>bg-blue-grey</p>
+                </div>
+            </div>
+            <div class="col-3 col-m-4 col-s-6">
+                <div class="card div-color bg-black" onclick="copyText('#000000')">
+                    <p>black</p>
+                    <p id="000000">#000000</p>
+                    <p>bg-black</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>

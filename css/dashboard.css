@@ -1,0 +1,87 @@
+.dashboard{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.sidebar{
+	width: 20%;
+	height: 100vh;
+	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	position: absolute;
+	left: 0;
+	z-index: 3;
+}
+.sidebar .logo{
+	width: 100%;
+	height: 15%;
+}
+.sidebar nav{
+	width: 100%;
+	height: 85%;
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.sidebar nav ul li{
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin: 15px 0;
+	border-radius: .25em;
+}
+.sidebar nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.sidebar nav ul li i,
+.sidebar nav ul li p{
+	line-height: 50px;
+	color: #737373;
+}
+.sidebar nav ul li i{
+	margin: 0 20px;
+}
+.sidebar nav ul li.active{
+	background-color: #9C27B0;
+	box-shadow: 2px 4px 15px 0 rgba(46,61,73,.2);
+}
+.sidebar nav ul li.active i,
+.sidebar nav ul li.active p{
+	color: white;
+}
+.mainbar{
+	width: calc(80% + 5px);
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	background: #eee;
+	z-index: 2;
+	padding: 20px;
+	padding-left: 25px;
+}
+.mainbar header{
+	width: 100%;
+	height: 50px;
+	clear: both;
+	display: table;
+}
+.mainbar header h5{
+	font-weight: 400;
+	color: #737373;
+	line-height: 50px;
+}
+.mainbar header .header-menu{
+	height: 100%;
+}
+.mainbar header .header-menu .header-icon{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.mainbar header .header-menu .header-icon i{
+	color: #737373;
+}
