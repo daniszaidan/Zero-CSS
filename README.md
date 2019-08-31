@@ -15,7 +15,4 @@
 ## Contact
 > - **[Gmail (daniszaidan@gmail.com)](mailto:daniszaidan@gmail.com)**
 > - **[Instagram (daniszaidan)](https://www.instagram.com/daniszaidan/)**
-> - **[Portfolio Website](https://daniszaidan.github.io/)**
-
-> <a href="mailto:daniszaidan@gmail.com">daniszaidan@gmail.com</a>
-> <a href="https://www.instagram.com/daniszaidan/">Instagram (daniszaidan)</a>
+> - **[Portfolio Website (daniszaidan.github.io)](https://daniszaidan.github.io/)**
