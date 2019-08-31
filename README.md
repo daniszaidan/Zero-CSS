@@ -8,9 +8,14 @@
 
 > Work in Progress 
 
-## Documentation Zero-CSS
+## Documentation
 
 > Work in Progress 
+
+## Partners
+
+> - **[Chevalier Lab](https://daniszaidan.github.io/csas/)**
+
 
 ## Contact
 > - **[Gmail (daniszaidan@gmail.com)](mailto:daniszaidan@gmail.com)**
