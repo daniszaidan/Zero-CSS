@@ -6,11 +6,11 @@
 
 ## Official Website
 
-> * Work in Progress 
+> Work in Progress 
 
 ## Documentation Zero-CSS
 
-> * Work in Progress 
+> Work in Progress 
 
 ## Contact
 <a href="mailto:daniszaidan@gmail.com" target="_blank">Gmail (daniszaidan@gmail.com)</a>
