@@ -13,5 +13,5 @@
 > Work in Progress 
 
 ## Contact
-<a href="mailto:daniszaidan@gmail.com">Gmail (daniszaidan@gmail.com)</a>
-<a href="https://www.instagram.com/daniszaidan/">Instagram (daniszaidan)</a>
+> <a href="mailto:daniszaidan@gmail.com">daniszaidan@gmail.com</a>
+> <a href="https://www.instagram.com/daniszaidan/">Instagram (daniszaidan)</a>
