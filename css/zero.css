@@ -6,7 +6,7 @@
 === 31 Juli 2018 ===
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
 
 *, *:after, *:before{
 	box-sizing: border-box;
@@ -32,14 +32,15 @@ time, mark, audio, video{
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+	font-family: 'Poppins', sans-serif !important;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section{
 	display: block;
 }
 body{
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-size: 1em;
+	font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: .01em;
     line-height: 1.4;
@@ -173,18 +174,20 @@ System Push Element
 	margin: 0 0 1em 0;
 }
 
-.bq-primary {
-    border-left: 3px solid #4285f4!important;
-}
 .blockquote {
-    padding: .5em 1em;
+	padding: .5em 1em;
     margin: 1em 0;
     border-left: .25em solid #eceeef;
+}
+.bq-primary {
+	border-left: 3px solid #4285f4;
+}
+.bq-red {
+	border-left: 3px solid #F44336;
 }
 .bq-primary .bq-title {
     color: #4285f4!important;
 }
-
 .blockquote .bq-title {
     margin-bottom: 0;
     font-size: 1.5em;

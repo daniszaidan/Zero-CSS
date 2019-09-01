@@ -5,37 +5,75 @@
 	position: relative;
 }
 .sidebar{
-	width: 20%;
+	width: 300px;
 	height: 100vh;
 	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 	background-color: white;
-	position: absolute;
+	position: fixed;
 	left: 0;
-	z-index: 3;
+	z-index: 999;
 }
 .sidebar .logo{
 	width: 100%;
 	height: 15%;
 }
+.sidebar .logo img{
+	height: 70%;
+}
 .sidebar nav{
 	width: 100%;
 	height: 85%;
-	padding: 20px;
+	padding: 10px;
 	overflow-x: hidden;
 	overflow-y: auto;
+}
+nav::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+	background-color: #eee;
+	/* border-radius: 5px; */
+}
+nav::-webkit-scrollbar-thumb{
+	background-color: #b3b3b3;
+	height: 5px;
+	border-radius: 5px;
 }
 .sidebar nav ul li{
 	display: block;
 	width: 100%;
-	height: 50px;
-	margin: 15px 0;
+	min-height: 50px;
+	margin: 5px 0;
 	border-radius: .25em;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	transition: all .3s;
+}
+.sidebar nav ul li:hover{
+	background-color: #eee;
 }
 .sidebar nav ul li a{
-	display: block;
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	font-size: 12px;
+    /* line-height: 50px; */
+	/* margin: 0 15px; */
+	color: #404040;
+	font-weight: 500;
+	transition: all .3s;
+}
+.sidebar nav ul li a:hover,
+.sidebar nav ul.list-child a:hover{
+	color: #03A9F4;
+}
+.sidebar nav ul.list-child li a{
+	margin: 0 15px;
+	font-weight: 400;
+	color: #5d5d5d;
+}
+.sidebar nav ul.list-child .active a,
+.sidebar nav ul li.active a{
+	font-weight: 500;
+	color: #03A9F4;
 }
 .sidebar nav ul li i,
 .sidebar nav ul li p{
@@ -46,42 +84,20 @@
 	margin: 0 20px;
 }
 .sidebar nav ul li.active{
-	background-color: #9C27B0;
+	/* background-color: #9C27B0; */
 	box-shadow: 2px 4px 15px 0 rgba(46,61,73,.2);
 }
-.sidebar nav ul li.active i,
-.sidebar nav ul li.active p{
-	color: white;
-}
-.mainbar{
-	width: calc(80% + 5px);
-	height: 100vh;
-	position: absolute;
-	right: 0;
-	background: #eee;
-	z-index: 2;
-	padding: 20px;
-	padding-left: 25px;
-}
-.mainbar header{
+main{
 	width: 100%;
-	height: 50px;
-	clear: both;
-	display: table;
+	height: 100vh;
+	padding-left: 300px;
+	overflow: hidden;
 }
-.mainbar header h5{
-	font-weight: 400;
-	color: #737373;
-	line-height: 50px;
-}
-.mainbar header .header-menu{
+main .wrapper{
+	max-width: unset;
+	width: 100%;
 	height: 100%;
-}
-.mainbar header .header-menu .header-icon{
-	width: 50px;
-	height: 50px;
-	cursor: pointer;
-}
-.mainbar header .header-menu .header-icon i{
-	color: #737373;
+	padding: 50px 20px 20px 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
