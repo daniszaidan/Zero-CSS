@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -40,6 +40,7 @@ footer, header, hgroup, menu, nav, section{
 }
 body{
 	font-family: 'Poppins', sans-serif !important;
+	color: #5d5d5d;
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: .01em;
@@ -204,11 +205,11 @@ System Push Element
     padding: .80rem 1.7rem;
     font-size: .81rem;
     transition: all .3s ease-in-out;
-    margin: .375rem;
+    margin: .5rem 0;
     border: 0;
     border-radius: .25em;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     cursor: pointer;
     outline: 0;
@@ -231,6 +232,10 @@ button .ripple {
         opacity: 0;
     }
 }
+.btn i{
+	margin-right: 5px;
+}
+
 .btn-icon, .btn-icon-s, .btn-icon-m, .btn-icon-l{
 	min-height: 50px;
 	min-width: 50px;
